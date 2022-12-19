@@ -6,12 +6,11 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 16:59:12 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/28 17:44:13 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/12/05 10:26:36 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
-
 
 char	*get_next_line(int fd)
 {
@@ -20,6 +19,8 @@ char	*get_next_line(int fd)
 	int			i;
 
 	i = 0;
+	if (fd < 0 || fd > FOPEN_MAX)
+		return (NULL);
 	if (BUFFER_SIZE < 1 || read(fd, 0, 0) < 0 || fd >= FOPEN_MAX)
 	{
 		while (stash[fd][i])
