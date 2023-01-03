@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 16:58:10 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/11/28 17:09:29 by nugarcia         ###   ########.fr       */
+/*   Updated: 2022/12/19 13:45:27 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_BONUS_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 48000000
+#  define BUFFER_SIZE 42
 # endif
 
 # include <stdio.h>
