@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 16:58:59 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/12/05 10:25:10 by nugarcia         ###   ########.fr       */
+/*   Updated: 2023/01/03 11:06:35 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ size_t	ft_strlen(char *str)
 	return (i);
 }
 
-int	stashfree(char *buff)
+int	antioverrite(char *buff)
 {
 	int	i;
 	int	is_nline;

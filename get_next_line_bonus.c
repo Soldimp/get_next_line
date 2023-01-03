@@ -6,7 +6,7 @@
 /*   By: nugarcia < nugarcia@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 16:59:12 by nugarcia          #+#    #+#             */
-/*   Updated: 2022/12/05 10:26:36 by nugarcia         ###   ########.fr       */
+/*   Updated: 2023/01/03 11:06:45 by nugarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*get_next_line(int fd)
 	while (stash[fd][0] || read(fd, stash[fd], BUFFER_SIZE) > 0)
 	{
 		line = ft_strjoin(line, stash[fd]);
-		if (stashfree(stash[fd]))
+		if (antioverrite(stash[fd]))
 			break ;
 	}
 	return (line);
